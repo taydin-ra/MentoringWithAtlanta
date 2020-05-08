@@ -17,6 +17,6 @@ public class StaticWithChar {
         System.out.println("swc1.kelime: " + swc1.kelime);
         System.out.println("swc1.letter: " + swc1.letter);
 
-        
+
     }
 }
