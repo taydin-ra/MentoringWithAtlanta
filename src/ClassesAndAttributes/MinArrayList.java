@@ -23,11 +23,11 @@ public class MinArrayList {
 
         // 1,38,17,45
 
-        int min=Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
 
         for (int i = 0; i < myList.size(); i++) {
             if (myList.get(i) < min) {
-                min=myList.get(i);
+                min = myList.get(i);
             }
         }
         System.out.println(min);

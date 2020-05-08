@@ -17,9 +17,9 @@ print the array
       */
 
         // code start here
-        String[][] cities = {{"new jersey", "atlanta", "ohio" },
-                {"Pittsburgh", "ohio", "new york", "ohio" },
-                {"ohio", "new york" }};
+        String[][] cities = {{"new jersey", "atlanta", "ohio"},
+                {"Pittsburgh", "ohio", "new york", "ohio"},
+                {"ohio", "new york"}};
         for (int i = 0; i < cities.length; i++) {
             for (int j = 0; j < cities[i].length; j++) {
                 if (cities[i][j].equals("ohio")) {

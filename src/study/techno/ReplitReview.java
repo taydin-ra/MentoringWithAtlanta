@@ -11,23 +11,6 @@ public class ReplitReview {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
          */
         String [] str={"$12","$23", "$10", "$2", "$5", "$2"};
         String ss="";
