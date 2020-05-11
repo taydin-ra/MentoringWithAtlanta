@@ -1,6 +1,12 @@
 package Constructors;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
 import java.util.Arrays;
+import java.util.Date;
 
 public class Constructors {
     // it is used to create an object of a class to initialize the instance variables
@@ -46,7 +52,7 @@ public class Constructors {
 
     } // implicitly (butun classlarda var ama hashcode return ediyor)
 
-    public  void print() {
+    public void print() {
         System.out.println(this.name + " " + this.age);
     }
 
@@ -55,13 +61,18 @@ public class Constructors {
     // public is accessible from everywhere
     // default in the same package
 
-    public static void main(String[] args) {
-        Constructors cn = new Constructors();
-        cn.name = "Ali";
-        System.out.println(cn.name);
-        Constructors cnn = new Constructors("John", 30);
-        cnn.print();
+    public static void main(String[] args) throws ParseException {
+//        Constructors cn = new Constructors();
+//        cn.name = "Ali";
+//        System.out.println(cn.name);
+//        Constructors cnn = new Constructors("John", 30);
+//        cnn.print();
 
+        LocalDate today = LocalDate.now();                          //Today's date
+        LocalDate birthday = LocalDate.of(1988, Month.SEPTEMBER, 6);  //Birth date
+
+        Period p = Period.between(birthday, today);
+        System.out.println(p.getYears());
 
 
     }
