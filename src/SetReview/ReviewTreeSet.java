@@ -2,7 +2,7 @@ package SetReview;
 
 import java.util.HashSet;
 
-public class TreeSet {
+public class ReviewTreeSet {
 
     public static void main(String[] args) {
         HashSet<Integer> setA = new HashSet<>();
