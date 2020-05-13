@@ -23,8 +23,6 @@ public class Task {
         this.amount = amount;
     }
 
-
-
     /*/
     Create a constructor with 3 parameters (int a, String name, float amt)
 
@@ -44,7 +42,7 @@ public class Task {
 
     public void deposit(float amnt) {
         amount += amnt;
-        System.out.println(amnt + " deposited");
+        System.out.println(amnt + " deposited  "+ "  balance is  "+ amount);
 
     }
 
@@ -96,4 +94,13 @@ public class Task {
     /*
     and call these methods in the main method
      */
+
+    public static void main(String[] args) {
+        Task t= new Task(867589, "AtlantaGroup",1000);
+        t.deposit(2000);
+//        t.checkBalance();
+//        t.withdraw(500);
+//        t.checkBalance();
+
+    }
 }
