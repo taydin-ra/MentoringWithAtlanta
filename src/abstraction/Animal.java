@@ -21,6 +21,7 @@ public abstract class Animal {
     }
 
     public void breathe() {
+
         System.out.println("if it is alive, it can breathe");
     }
 
